@@ -11,9 +11,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/TcmGuide',
-    name: 'TcmGuide',
-    component: () => import('../views/TcmGuide.vue')
+    path: '/HerbGuide',
+    name: 'HerbGuide',
+    component: () => import('../views/HerbGuide.vue')
   },
   {
     path: '/HealthGuide',
@@ -26,10 +26,15 @@ const routes = [
     component: () => import('../views/SymptomGuide.vue')
   },
   {
-    path: '/CasesGuide',
-    name: 'CasesGuide',
-    component: () => import('../views/CasesGuide.vue')
+    path: '/PrescriptionGuide',
+    name: 'PrescriptionGuide',
+    component: () => import('../views/PrescriptionGuide.vue')
   },
+  {
+    path: '/HerbDetail/:id',
+    name: 'HerbDetail',
+    component: () => import('../views/HerbDetail')
+  }
 ]
 
 const router = new VueRouter({

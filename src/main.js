@@ -5,6 +5,7 @@ import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import i18n from "@/lang";
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
@@ -21,5 +22,6 @@ Vue.use(ElementUI);
 new Vue({
   router,
   store,
+  i18n,
   render: h => h(App)
 }).$mount('#app')

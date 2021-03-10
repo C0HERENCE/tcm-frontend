@@ -3,7 +3,7 @@
     <top-nav-bar></top-nav-bar>
     <IndexBanner v-if="$route.path==='/'"></IndexBanner>
     <SubpagesBanner v-else></SubpagesBanner>
-    <b-container class="upper-part">
+    <b-container>
       <router-view/>
     </b-container>
     <MainFooter class="footer"></MainFooter>
@@ -27,7 +27,6 @@ export default {
   padding-bottom:4em;
 }
 .footer{
-  bottom: 0;
   width:100%;
   height: 60px;
   line-height: 60px;

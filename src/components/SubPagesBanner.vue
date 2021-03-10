@@ -7,11 +7,11 @@
       <b-row>
         <b-col>
           <b-nav tabs fill class="navWrap">
-            <b-nav-item to="/">首页</b-nav-item>
-            <b-nav-item to="/tcmGuide" :active="$route.path.toLowerCase()==='/tcmguide'">药材</b-nav-item>
-            <b-nav-item to="/casesGuide" :active="$route.path.toLowerCase()==='/casesguide'">药方</b-nav-item>
-            <b-nav-item to="/symptomGuide" :active="$route.path.toLowerCase()==='/symptomguide'">症状</b-nav-item>
-            <b-nav-item to="/healthGuide" :active="$route.path.toLowerCase()==='/healthguide'">养生</b-nav-item>
+            <b-nav-item to="/">{{$t("indexNav")}}</b-nav-item>
+            <b-nav-item to="/HerbGuide" :active="$route.path.toLowerCase()==='/HerbGuide'.toLowerCase()">{{$t("herb")}}</b-nav-item>
+            <b-nav-item to="/PrescriptionGuide" :active="$route.path.toLowerCase()==='/PrescriptionGuide'.toLowerCase()">{{$t("prescription")}}</b-nav-item>
+            <b-nav-item to="/SymptomGuide" :active="$route.path.toLowerCase()==='/SymptomGuide'.toLowerCase()">{{$t("symptom")}}</b-nav-item>
+            <b-nav-item to="/HealthGuide" :active="$route.path.toLowerCase()==='/HealthGuide'.toLowerCase()">{{$t("health")}}</b-nav-item>
           </b-nav>
         </b-col>
       </b-row>
@@ -47,6 +47,7 @@ name: "SubpagesBanner"
   align-items: center;
   background: url(../assets/img.png) no-repeat;
   background-position-x: center;
+  padding: 0;
 }
 
 </style>
